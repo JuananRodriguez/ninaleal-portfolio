@@ -1,0 +1,12 @@
+.header-page {
+  & > p {
+    margin: 0 0 2.6em 0;
+    max-width: 800px;
+  }
+
+  & > h2 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 700;
+  }
+}

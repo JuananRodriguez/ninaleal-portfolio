@@ -1,0 +1,19 @@
+$break-medium: 1200px;
+
+.About {
+  .col {
+    text-align: justify;
+    &:first-child {
+      padding-left: 0 !important;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 !important;
+    }
+
+  }
+
+  & .footer {
+    margin-top: 1em;
+  }
+}
