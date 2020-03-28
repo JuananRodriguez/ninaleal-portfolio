@@ -1,20 +1,23 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "nina-leal-portfolio",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Nina Leal portfolio",
+  "version": "1.0.0",
+  "author": "Juanan Rodriguez & Nina Leal>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
     "gatsby": "^2.19.45",
-    "gatsby-image": "^2.2.44",
+    "gatsby-image": "^2.3.1",
     "gatsby-plugin-feed": "^2.3.29",
     "gatsby-plugin-google-analytics": "^2.1.38",
+    "gatsby-plugin-layout": "^1.2.1",
     "gatsby-plugin-manifest": "^2.2.48",
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-sharp": "^2.4.13",
     "gatsby-plugin-typography": "^2.3.25",
     "gatsby-remark-copy-linked-files": "^2.1.40",
@@ -25,11 +28,16 @@
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-remark": "^2.6.59",
     "gatsby-transformer-sharp": "^2.3.19",
+    "node-sass": "^4.13.1",
     "prismjs": "^1.19.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-grid-system": "^6.3.0",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.9.0",
+    "react-images": "^1.1.0",
     "react-typography": "^0.16.19",
+    "resolve-url-loader": "^3.1.1",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "typography": "^0.16.19",
@@ -38,22 +46,22 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://ninaleal.com/",
   "keywords": [
-    "gatsby"
+    "react, gatsby, illustration, portfolio, javascript, blog"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/JuananRodriguez/ninaleal-portfolio"
   },
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve -o -p 9000",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }

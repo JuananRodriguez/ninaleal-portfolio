@@ -11,8 +11,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
+  //<Layout location={location} title={siteTitle}>
   return (
-    <Layout location={location} title={siteTitle}>
+    <>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -74,7 +75,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
-    </Layout>
+    </>
   )
 }
 

@@ -1,17 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Nina Leal`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Juanan Rodriguez & Nina Leal`,
+      summary: `Web design and development. Digital and classic illustration`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `Ilustración digital y watercolor.`,
+    siteUrl: `https://ninaleal.com/`,
     social: {
-      twitter: `kylemathews`,
+      instagram: `https://www.instagram.com/nina_lealramos/`,
     },
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        useResolveUrlLoader: true,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,11 +25,32 @@ module.exports = {
         name: `blog`,
       },
     },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     path: `${__dirname}/content/assets`,
+    //     name: `assets`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
+        path: `${__dirname}/content/collections`,
+        name: `collections`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/editorial`,
+        name: `editorial`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/gallery`,
+        name: 'gallery',
       },
     },
     {
@@ -48,8 +75,16 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 90,
+      },
+    },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-image`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -76,6 +111,12 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/Layout.js`)
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
