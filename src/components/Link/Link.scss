@@ -1,0 +1,9 @@
+.link{
+    text-decoration: none;
+    box-shadow: unset;
+    color: black;
+
+    &:hover{
+        color: cornflowerblue;
+    }
+}

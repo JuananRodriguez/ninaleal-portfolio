@@ -1,0 +1,54 @@
+$TRANSITION_DURATION: 300;
+$SIDEBAR_SIZE: 275;
+$GENERAL_PADDING_SIZE: 15;
+
+
+$OPENING: 'OPENING';
+$CLOSING: 'CLOSING';
+$OPENED: 'OPENED';
+$CLOSED: 'CLOSED';
+
+.Sidebar-Blanket{
+    background-color: rgba(25, 25, 25, 0.75);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9998;
+}
+
+.Sidebar-Wrapper{
+    width: #{$SIDEBAR_SIZE}px;
+    transition: transform #{$TRANSITION_DURATION}ms, visibility #{$TRANSITION_DURATION}ms;
+    height: 100%;
+    padding: #{$GENERAL_PADDING_SIZE}px;
+    position: fixed;
+    background: white;
+    right: 0;
+    top: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow-x: unset;
+    z-index: 9999;
+
+    &.right {
+        right: 0;
+        transform: translateX(#{$SIDEBAR_SIZE + $GENERAL_PADDING_SIZE * 2}px);
+    }
+
+    &.left {
+        left: 0;
+        transform: translateX(-#{$SIDEBAR_SIZE + $GENERAL_PADDING_SIZE * 2}px);
+    }
+
+    &.#{$OPENED}{
+        transform: translateX(0px);
+    }
+
+    & > .Sidebar-Content{
+        overflow-x: hidden;
+        width: 100%;
+    }
+}

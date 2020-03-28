@@ -1,0 +1,5 @@
+.editorial-post {
+  & .Carousel-View {
+    height: calc(60vh - 54px);
+  }
+}

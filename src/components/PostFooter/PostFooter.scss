@@ -1,0 +1,15 @@
+.post-footer{
+    & > ul, & > ul > li{
+        margin: 0;
+        padding: 0 0.3em;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    & > ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: calc(100% - 0.6em);
+    }
+}
