@@ -35,11 +35,11 @@ const Navigation = ({ navIsOpen, setNavIsOpen, isMobile }) => {
                     <img src={Logotype} alt="Logotype" />
                 </div>
                 <ul>
-                    <li><NavLink onClick={handleCloseNav} to={'/'}>GALLERY</NavLink></li>
+                    <li><NavLink onClick={handleCloseNav} to={'/'}>GALERÍA</NavLink></li>
                     <li><NavLink onClick={handleCloseNav} to={'/editorial'}>EDITORIAL</NavLink></li>
                     {/* <li><NavLink onClick={handleCloseNav} to={'/editorial'}>COLLECTIONS</NavLink></li> */}
                     {/* <li><NavLink onClickhandleCloseNav} to={'/blog'}>BLOG</NavLink></li> */}
-                    <li><NavLink onClick={handleCloseNav} to={'/about'}>ABOUT ME</NavLink></li>
+                    <li><NavLink onClick={handleCloseNav} to={'/about'}>SOBRE MI</NavLink></li>
                     <NavSeparator />
                     <li><NavLink onClick={handleCloseNav} to={'https://www.instagram.com/nina_lealramos/'} isExternal>Instagram</NavLink></li>
                 </ul>
