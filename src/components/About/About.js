@@ -7,52 +7,36 @@ const About = () => {
     return (
         <div className="content About">
             <HeaderPage
-                title={"Hi! I'm Nina Leal"}
-                subtitle="watercolor illustator"
+                title={"Hola! Soy Nina Leal"} //Hi! I'm Nina Leal
+                subtitle="ilustradora watercolor" //watercolor illustator
             />
             <Container fluid>
                 <Row>
                     <Col md={6} className={`col mobile`} >
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus vitae pretium elit. Nam eleifend nulla et feugiat malesuada.
-                            Nunc ac nunc imperdiet libero pellentesque condimentum vel a ex.
-                            Proin quis gravida leo, sit amet placerat quam.
-                            Duis porttitor purus erat, ac sodales libero gravida vel.
-                            Pellentesque ante elit, rhoncus eget rutrum id, convallis nec tellus.
-                            Nullam elementum nunc ac leo placerat finibus vitae sed nibh.
-                            Ut non diam et nunc fringilla tincidunt et sed neque.
-                            Integer non suscipit leo, sed egestas sem.
-                            Nullam rutrum felis ut augue ornare convallis eu eu urna.
-                            Vestibulum ornare urna urna, id dignissim sapien mattis vel.
-                            Nam faucibus, tellus at efficitur hendrerit, arcu mi pellentesque risus, a tincidunt arcu diam id diam.
-                            Etiam convallis luctus volutpat.
+                            El dibujo y la pintura ha sido mi pasión desde pequeña, lo que me llevó a graduarme en Publicidad y Relaciones Públicas por la Universidad de Sevilla, buscando el arte que hay dentro de la publicidad.
+                </p>
+                        <p>
+                            Disfruto ilustrando retratos, interprentando sus emociones en mis colores y otros elementos adyacentes, como animales, objetos o formas simples. Intento mantenerme en continua evolución y aprendizaje, innovando y reinventándome en cada trabajo.
                 </p>
                     </Col>
                     <Col md={6} className={`col mobile`} >
+
                         <p>
-                            Aenean sollicitudin sed felis et posuere.
-                            Sed rutrum sapien sit amet odio pellentesque fermentum. Mauris quis est magna.
-                            Curabitur id massa ex.
-                            Ut ullamcorper aliquet est, non tristique lorem efficitur id.
-                            Sed a aliquam eros. Nam consectetur ex at eros lacinia suscipit.
+                            Siempre he sido amante de la libertad y vida propia que brindan las acuarelas, el carboncillo y otras técnicas tradicionales, las cuales combino con técnicas y retoques digitales más actuales, creando así obras complejas llenas matices y significado.
                 </p>
                         <p>
-                            Vivamus accumsan leo at ipsum tincidunt eleifend.
-                            In volutpat vel turpis sed lobortis.
-                            Vivamus sollicitudin non massa nec placerat.
-                            Vivamus vitae purus non leo ultrices rutrum id sit amet dui.
-                            Cras consectetur vehicula eleifend.
-                            Phasellus consequat lectus metus, eget interdum dui fringilla eget.
-                            Morbi non magna orci.
-                            Nulla fermentum tortor metus, et aliquam felis tincidunt quis.
-                            Etiam imperdiet neque non leo auctor volutpat at elementum dolor.
+                            Te invito a conocer mi trabajo publicado en esta web o en mi <Link isExternal={true} to="https://www.instagram.com/nina_lealramos/">Instagram</Link>, el cual actualizo regularmente.
+                </p>
+                <p>
+                            Puedes contactar conmigo a través de <Link isExternal={true} to="mailto:hola@ninaleal.com">hola@ninaleal.com</Link> o a través de mis redes sociales.
                 </p>
                     </Col>
                 </Row>
             </Container>
 
-            <h3 className="footer">Take a look at <Link to="/">my personal work</Link> <br /><Link to="/editorial">or my editorial work</Link></h3>
+            {/* <h3 className="footer">Take a look at <Link to="/">my personal work</Link> <br /><Link to="/editorial">or my editorial work</Link></h3> */}
+            <h3 className="footer">Echa un vistazo a <Link to="/">mi trabajo personal</Link> <br /> o a mi <Link to="/editorial">trabajo editorial</Link></h3>
         </div >
     )
 }
