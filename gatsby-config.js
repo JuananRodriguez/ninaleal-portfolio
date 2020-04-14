@@ -100,7 +100,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
-        display: `fullscreen`,
+        display: `standalone`,
         icon: `content/assets/nina-leal-icon.png`,
       },
     },
